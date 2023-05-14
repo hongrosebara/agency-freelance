@@ -206,7 +206,8 @@
               <h2 class="text-xl lg:text-xl font-medium mb-1 text-gray-700">Have a Question?</h2>
               <span class="text-sm mb-4 text-gray-400">Pop us a message and we'll get in touch.</span>
               <!-- Form -->
-              <form name="contact" data-netlify="true" autocomplete="off" netlify-honeypot="bot-field">
+              <form action="https://formspree.io/f/mqkojlbo"
+              method="POST">
                 <p class="hidden">
                   <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
                 </p>
@@ -219,7 +220,7 @@
                   <label htmlFor="email" class="label-email"><span class="content-email">Email</span></label>
                 </div>
                 <div>
-                  <textarea name="question" placeholder="Your Question" id="question" cols="30" rows="5" minLength="10"
+                  <textarea name="message" placeholder="Your Question" id="question" cols="30" rows="5" minLength="10"
                     maxLength="100" required></textarea>
                 </div>
                 <button type="submit" id="submit-button"
