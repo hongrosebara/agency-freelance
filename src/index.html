@@ -25,30 +25,44 @@
 
     <script type="application/ld+json">
       {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "WebbyAppy",
-        "legalName": "WebbyAppy",
-        "slogan": "Building innovative solutions for the digital world",
-        "description": "We specialize in creating scalable, secure, and responsive web apps that are optimized for performance and designed to help businesses achieve their goals.",
-        "location": "Australia, Estonia",
-        "url": "www.webbyappy.come",
-        "email": "contact@webbyappy.com",
-        "telephone": "(+61) 468496 539",
-        "contactPoint": "Andrew Dyster",
-        "founder": "Andrew Dyster",
-        "foundingDate": "2009",
-        "foundingLocation": "Australia",
-        "employee": ["Jackson Stone", "Chloe Sullivan"],
-        "areaServed": ["Australia", "Estonia"],
-        "sameAs": ["facebook.com", "twitter.com"],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Northam",
-          "addressRegion": "Western Australia",
-          "postalCode": "6401",
-          "streetAddress": "78 Marley Point Road"
-        }
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@id": "https://www.webbyappy.com/",
+            "@type": "Organization",
+            "name": "WebbyAppy",
+            "alternateName": "WebbyAppy",
+            "legalName": "WebbyAppy OÜ",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "http://www.webbyappy.com/webbyappy-logo.png",
+              "height": "60",
+              "width": "336"
+            },
+            "image": {
+              "@type": "ImageObject",
+              "url": "http://www.webbyappy.com/webbyappy-logo.png",
+              "height": "60",
+              "width": "336"
+            },
+            "url": "https://www.webbyappy.com/",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Tallinn, Estonia",
+              "postalCode": "15551",
+              "streetAddress": "Sepapaja tn 6"
+            },
+            "email": "contact@webbyappy.com",
+            "telephone": "+61468496539",
+            "identifier": "16531337",
+            "taxID": "16531337",
+            "vatID": "16531337",
+            "sameAs": [
+              "https://www.webbyappy.com/",
+              "https://ariregister.rik.ee/eng/company/16531337/WebbyAppy-O%C3%9C"
+            ]
+          }
+        ]
       }
     </script>
   </head>
@@ -59,7 +73,7 @@
       <header
         class="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64"
       >
-        <div
+        <!-- <div
           class="hidden lg:flex justify-between items-center border-b text-sm py-3"
         >
           <div class="">
@@ -130,9 +144,9 @@
                 </svg>
               </a>
             </li> -->
-            </ul>
+        <!-- </ul>
           </div>
-        </div>
+        </div> -->
 
         <div class="flex flex-wrap items-center justify-between py-6">
           <div class="md:w-auto">
@@ -618,34 +632,6 @@
               strive to exceed expectations with every project we undertake. Let
               us help you take your business to the next level.
             </p>
-
-            <!-- Subscribe form -->
-            <!-- <form name="subscribe" data-netlify="true" autocomplete="off" netlify-honeypot="bot-field"
-            class="flex items-center mt-6">
-            <p class="hidden">
-              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-            </p>
-            <div class="w-full">
-              <label class="block uppercase tracking-wide text-gray-400 text-xs font-semibold mb-2"
-                for="grid-last-name">
-                Subscribe to our Newsletter
-              </label>
-              <div class="relative">
-                <input
-                  class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-4 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  type="email" placeholder="Email address...">
-
-                <button type="submit"
-                  class="bg-gradient-to-r from-blue-500 to-blue-400 text-white hover:from-blue-400 hover:to-blue-500 px-4 py-2 text-sm font-bold rounded absolute top-0 right-0 my-2 mr-2">Subscribe</button>
-                <span id="success"
-                  class="hidden mt-2 px-4 py-2 font-medium border rounded-sm border-blue-500 bg-blue-100 text-blue-600">Thanks!
-                  We'll be in touch soon.</span>
-                <span id="error"
-                  class="hidden mt-2 px-4 py-2 font-medium border rounded-sm border-red-500 bg-red-100 text-red-600">Whoops...
-                  Something went wrong.</span>
-              </div>
-            </div>
-          </form> -->
           </div>
 
           <div class="w-full md:w-1/8 lg:w-1/6 mt-20 lg:mt-0 lg:mx-4">
@@ -715,7 +701,7 @@
                   <span class="ml-3"> Northam, Western Australia, 6401 </span>
                 </a>
               </li>
-              <li class="mt-4">
+              <!-- <li class="mt-4">
                 <a
                   href="#"
                   title=""
@@ -737,7 +723,7 @@
                   </span>
                   <span class="ml-3"> Mon - Fri: 09:00 - 17:00<br /> </span>
                 </a>
-              </li>
+              </li> -->
               <li class="mt-4">
                 <a
                   href="#"
@@ -788,6 +774,28 @@
           <div class="w-full md:w-1/8 lg:w-1/6 mt-20 lg:mt-0 lg:mx-4">
             <h5 class="uppercase tracking-wider font-semibold">WebbyAppy OÜ</h5>
             <ul class="mt-4">
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="flex items-center opacity-75 hover:opacity-100"
+                >
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M12,2C7.589,2,4,5.589,4,9.995C3.971,16.44,11.696,21.784,12,22c0,0,8.029-5.56,8-12C20,5.589,16.411,2,12,2z M12,14 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S14.21,14,12,14z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="ml-3"> Tallinn, Estonia </span>
+                </a>
+              </li>
               <li class="mt-4">
                 <a
                   href="#"
@@ -811,27 +819,25 @@
                 </a>
               </li>
             </ul>
-
-            <p class="text-sm text-gray-400 mt-12">
-              © 2023 WebbyAppy<span class="md:hidden">, </span>
-              <br class="hidden lg:block" />All Rights Reserved.
-            </p>
           </div>
         </div>
 
-        <div class="flex w-full flex-col items-center text-xs mt-12">
-          <a
-            class="text-gray-400 hover:text-gray-300"
-            href="/privacy_policy.html"
-            rel="nofollow"
-            >Privacy Policy</a
-          >
-          <a
-            class="text-gray-400 hover:text-gray-300"
-            href="/terms_and_conditions.html"
-            rel="nofollow"
-            >Terms &amp; Conditions</a
-          >
+        <div class="flex w-full flex-col justify-start md:flex-row md:justify-between items-start text-xs mt-12">
+          <p class="text-gray-400">© 2023 WebbyAppy, All Rights Reserved.</p>
+          <div>
+            <a
+              class="text-gray-400 hover:text-gray-300"
+              href="/privacy_policy.html"
+              rel="nofollow"
+              >Privacy Policy</a
+            >
+            <a
+              class="text-gray-400 hover:text-gray-300"
+              href="/terms_and_conditions.html"
+              rel="nofollow"
+              >Terms &amp; Conditions</a
+            >
+          </div>
         </div>
       </footer>
       <!-- end footer -->
